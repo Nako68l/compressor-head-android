@@ -13,7 +13,7 @@ public class CompressorHead {
     public static final String JPEG = "jpeg";
     public static final String WEBP = "webp";
 
-    public static String getURL(@NonNull String imageURl, int width, int height, String format) {
+    public static String getURL(@NonNull String imageURl, @NonNull int width, int height, String format) {
         Uri.Builder builder = new Uri.Builder();
         builder.scheme("https")
                 .authority(Constants.BASE_URL)
